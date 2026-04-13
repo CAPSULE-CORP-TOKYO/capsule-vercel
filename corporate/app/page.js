@@ -49,7 +49,7 @@ export default function Home() {
           <h2 className="section-title reveal">{t('提供サービス', 'What we do')}</h2>
 
           <div className="services-grid">
-            <Link href="/service" className="service-card reveal">
+            <div className="service-card reveal">
               <div className="service-card-inner">
                 <span className="service-number">01</span>
                 <h3 className="service-name">Web Design &amp; Development</h3>
@@ -57,6 +57,19 @@ export default function Home() {
                   {t(
                     '戦略設計からデザイン、開発、運用まで。ビジネスの成長を支えるWebサイトを、ワンストップで提供します。',
                     'From strategy to design, development, and operations. We deliver websites that drive business growth, end to end.'
+                  )}
+                </p>
+              </div>
+            </div>
+
+            <Link href="/service" className="service-card reveal">
+              <div className="service-card-inner">
+                <span className="service-number">02</span>
+                <h3 className="service-name">Cloud CTO</h3>
+                <p className="service-desc">
+                  {t(
+                    'IT周りの「困った」をまるごとお任せ。面倒なIT業務から解放されて、本業に集中できる環境をつくります。',
+                    'Leave all your IT headaches to us. We handle the complexity so you can focus entirely on growing your business.'
                   )}
                 </p>
                 <span className="service-link">{t('詳しく見る', 'Learn more')}</span>
@@ -70,7 +83,7 @@ export default function Home() {
 
             <div className="service-card service-card--coming reveal">
               <div className="service-card-inner">
-                <span className="service-number">02</span>
+                <span className="service-number">03</span>
                 <h3 className="service-name">AI Integration &amp; Consulting</h3>
                 <p className="service-desc">
                   {t(
@@ -107,6 +120,38 @@ export default function Home() {
             </div>
           </div>
 
+          {/* Founder */}
+          <div className="founder reveal">
+            <div className="founder-inner">
+              <div className="founder-header">
+                <div>
+                  <h3 className="founder-name">{t('矢野 太一', 'Taichi Yano')}</h3>
+                  <span className="founder-role">{t('代表取締役', 'Founder & CEO')}</span>
+                </div>
+              </div>
+              <div className="founder-bio">
+                <p>
+                  {t(
+                    '青山学院大学卒業後、スタートアップを共同創業し、事業売却を経験。その後、累計1,000万DL超のAIヘルスケアアプリを展開するテック企業にて、事業部長としてプロダクト戦略と事業成長を牽引。独立後はPM（プロダクトマネージャー）として複数のスタートアップで新規事業立ち上げやSaaS開発に従事。',
+                    'After graduating from Aoyama Gakuin University, co-founded a startup and achieved a successful exit. Then led product strategy and business growth as Division Head at a tech company operating an AI healthcare app with over 10 million downloads. As an independent PM, launched new businesses and developed SaaS products across multiple startups.'
+                  )}
+                </p>
+                <p>
+                  {t(
+                    'UI/UX設計から事業開発、AIの実務活用まで、プロダクトづくりの全工程を一気通貫で手がける。AIをものづくりの基盤に据えた新しい形のスタジオを構想し、2024年にEast Venturesの出資を受けCAPSULEを法人化。',
+                    'Covers the full spectrum of product development — from UI/UX design and business development to practical AI implementation. Envisioning a new kind of studio with AI at its core, incorporated CAPSULE in 2024 with investment from East Ventures.'
+                  )}
+                </p>
+              </div>
+              <blockquote className="founder-quote">
+                {t(
+                  '「テクノロジーは、人の可能性を広げるためのツールだと思っています。リソースが限られる中小企業や個人事業主の方々に、AIとWebの専門性を届けることで、新しい挑戦が生まれる土壌をつくりたい。」',
+                  '"I believe technology is a tool for expanding human potential. By bringing AI and web expertise to small businesses and solo entrepreneurs with limited resources, I want to create fertile ground for new challenges."'
+                )}
+              </blockquote>
+            </div>
+          </div>
+
           {/* Company Info */}
           <div className="company-info reveal">
             <h3 className="company-info-title">{t('会社概要', 'Company Overview')}</h3>
@@ -133,7 +178,7 @@ export default function Home() {
               </div>
               <div className="info-row">
                 <dt>{t('事業内容', 'Business')}</dt>
-                <dd>{t('Webデザイン・開発 / AIコンサルティング', 'Web Design & Development / AI Consulting')}</dd>
+                <dd>{t('Webデザイン・開発 / ITアウトソーシング / AIコンサルティング', 'Web Design & Development / IT Outsourcing / AI Consulting')}</dd>
               </div>
             </dl>
           </div>

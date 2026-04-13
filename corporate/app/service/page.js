@@ -102,6 +102,55 @@ export default function ServicePage() {
         </div>
       </section>
 
+      {/* Testimonials */}
+      <section className="section svc-testimonials">
+        <div className="section-inner">
+          <p className="section-label reveal">{t('ご利用者の声', 'Testimonials')}</p>
+          <h2 className="section-title reveal">{t('導入企業の声をご紹介します。', 'What our clients say.')}</h2>
+
+          <div className="svc-testimonials-grid">
+            <div className="svc-testimonial reveal">
+              <p className="svc-testimonial-text">
+                {t(
+                  '「他社では初期費用だけで80万円の見積もりでした。AIを活用した制作プロセスのおかげか、月額制で初期費用がかからないのに、テンプレートではないオリジナルデザインで仕上げてもらえて驚きました。」',
+                  '"Other companies quoted us ¥800,000 just for setup. Thanks to their AI-driven workflow, we got an original design — not a template — with zero upfront cost on a monthly plan."'
+                )}
+              </p>
+              <div className="svc-testimonial-author">
+                <span className="svc-testimonial-role">{t('美容サロン経営', 'Beauty Salon Owner')}</span>
+                <span className="svc-testimonial-company">{t('個人事業主', 'Sole Proprietor')}</span>
+              </div>
+            </div>
+
+            <div className="svc-testimonial reveal">
+              <p className="svc-testimonial-text">
+                {t(
+                  '「相談から2週間でサイトが公開できました。以前の制作会社では3ヶ月かかっていたので、AIでここまで変わるのかと正直びっくりです。対応も丁寧でした。」',
+                  '"Our site went live just 2 weeks after our first consultation. Our previous agency took 3 months — we were honestly amazed at how much AI changes the game. Great communication too."'
+                )}
+              </p>
+              <div className="svc-testimonial-author">
+                <span className="svc-testimonial-role">{t('不動産業', 'Real Estate')}</span>
+                <span className="svc-testimonial-company">{t('従業員6名', '6 employees')}</span>
+              </div>
+            </div>
+
+            <div className="svc-testimonial reveal">
+              <p className="svc-testimonial-text">
+                {t(
+                  '「以前の制作会社ではちょっとした修正でも数万円かかっていて、更新を諦めていました。CAPSULEさんはリニューアルのデモをすぐに作って見せてくれたので安心してお願いでき、今は更新も月額内で対応してもらえるので、サイトを活用できるようになりました。」',
+                  '"Our previous agency charged tens of thousands of yen for even minor updates, so we\'d given up on keeping our site current. CAPSULE quickly built a redesign demo for us, which gave us confidence. Now all updates are included in the monthly fee, and we\'re finally making the most of our website."'
+                )}
+              </p>
+              <div className="svc-testimonial-author">
+                <span className="svc-testimonial-role">{t('整骨院経営', 'Chiropractic Clinic')}</span>
+                <span className="svc-testimonial-company">{t('従業員3名', '3 employees')}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="section svc-how" id="how">
         <div className="section-inner">
