@@ -1,4 +1,5 @@
 export const metadata = {
+  robots: { index: false, follow: false },
   title: '特定商取引法に基づく表記',
   description: 'CAPSULE - 特定商取引法に基づく表記',
 };

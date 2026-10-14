@@ -1,6 +1,5 @@
 'use client';
 
-import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import HeroCanvas from '@/components/HeroCanvas';
@@ -27,13 +26,13 @@ export default function Home() {
         <HeroCanvas />
         <div className="hero-inner">
           <h1 className="hero-title">
-            <span className="hero-line">{t('デジタルの力で、', 'We shape ideas')}</span>
-            <span className="hero-line">{t('ビジネスを前へ。', 'into digital reality.')}</span>
+            <span className="hero-line">{t('AIの力で、', 'Moving business')}</span>
+            <span className="hero-line">{t('ビジネスを前へ。', 'forward with AI.')}</span>
           </h1>
           <p className="hero-sub">
             {t(
-              'AIを基盤に、戦略からデザイン、開発までを一貫して提供。従来の枠を超えたものづくりを。',
-              'Built on AI, we deliver end-to-end — from strategy to design to development. Crafting beyond convention.'
+              'AIを基盤にしたプロダクトと伴走支援で、中小企業・個人事業主の次の一歩を後押しします。',
+              'AI-native products and hands-on support that help small businesses and independent owners take their next step.'
             )}
           </p>
         </div>
@@ -49,41 +48,28 @@ export default function Home() {
           <h2 className="section-title reveal">{t('提供サービス', 'What we do')}</h2>
 
           <div className="services-grid">
-            <div className="service-card reveal">
+            <a href="https://hojokinpocket.ai" target="_blank" rel="noopener noreferrer" className="service-card reveal">
               <div className="service-card-inner">
                 <span className="service-number">01</span>
-                <h3 className="service-name">Web Design &amp; Development</h3>
+                <h3 className="service-name">{t('補助金ポケット', 'Hojokin Pocket')}</h3>
                 <p className="service-desc">
                   {t(
-                    '戦略設計からデザイン、開発、運用まで。ビジネスの成長を支えるWebサイトを、ワンストップで提供します。',
-                    'From strategy to design, development, and operations. We deliver websites that drive business growth, end to end.'
+                    '中小企業の補助金申請を、経営者とそのAIで進めるためのサービス『補助金ポケット』を開発・運営しています。',
+                    'CAPSULE Inc. builds and operates Hojokin Pocket, an AI-native platform that helps Japanese small businesses find and apply for government subsidies.'
                   )}
                 </p>
-              </div>
-            </div>
-
-            <Link href="/service" className="service-card reveal">
-              <div className="service-card-inner">
-                <span className="service-number">02</span>
-                <h3 className="service-name">Cloud CTO</h3>
-                <p className="service-desc">
-                  {t(
-                    'IT周りの「困った」をまるごとお任せ。面倒なIT業務から解放されて、本業に集中できる環境をつくります。',
-                    'Leave all your IT headaches to us. We handle the complexity so you can focus entirely on growing your business.'
-                  )}
-                </p>
-                <span className="service-link">{t('詳しく見る', 'Learn more')}</span>
+                <span className="service-link">{t('サービスサイトへ', 'Visit website')}</span>
               </div>
               <div className="service-arrow">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                   <path d="M7 17L17 7M17 7H7M17 7V17"/>
                 </svg>
               </div>
-            </Link>
+            </a>
 
-            <div className="service-card service-card--coming reveal">
+            <div className="service-card reveal">
               <div className="service-card-inner">
-                <span className="service-number">03</span>
+                <span className="service-number">02</span>
                 <h3 className="service-name">AI Integration &amp; Consulting</h3>
                 <p className="service-desc">
                   {t(
@@ -91,7 +77,6 @@ export default function Home() {
                     'We help businesses leverage cutting-edge AI for operational efficiency and product development — from strategy and PoC to full implementation.'
                   )}
                 </p>
-                <span className="service-badge">Coming Soon</span>
               </div>
             </div>
           </div>
@@ -158,11 +143,11 @@ export default function Home() {
             <dl className="company-info-table">
               <div className="info-row">
                 <dt>{t('会社名', 'Company Name')}</dt>
-                <dd>株式会社CAPSULE</dd>
+                <dd>{t('株式会社CAPSULE', 'CAPSULE Inc.')}</dd>
               </div>
               <div className="info-row">
                 <dt>{t('代表取締役', 'Representative')}</dt>
-                <dd>矢野 太一</dd>
+                <dd>{t('矢野 太一', 'Taichi Yano')}</dd>
               </div>
               <div className="info-row">
                 <dt>{t('設立', 'Founded')}</dt>
@@ -174,11 +159,11 @@ export default function Home() {
               </div>
               <div className="info-row">
                 <dt>{t('所在地', 'Location')}</dt>
-                <dd>{t('〒251-0025 神奈川県藤沢市鵠沼石上3-1-13-3A', '3-1-13-3A Kugenuma Ishigami, Fujisawa, Kanagawa, Japan')}</dd>
+                <dd>{t('〒251-0025 神奈川県藤沢市鵠沼石上3-1-13-3A', '3-1-13-3A Kugenuma Ishigami, Fujisawa, Kanagawa 251-0025, Japan')}</dd>
               </div>
               <div className="info-row">
                 <dt>{t('事業内容', 'Business')}</dt>
-                <dd>{t('Webデザイン・開発 / ITアウトソーシング / AIコンサルティング', 'Web Design & Development / IT Outsourcing / AI Consulting')}</dd>
+                <dd>{t('補助金申請支援サービス「補助金ポケット」の開発・運営 / AIコンサルティング', 'Development and operation of Hojokin Pocket, an AI-native subsidy application platform / AI Consulting')}</dd>
               </div>
             </dl>
           </div>
@@ -193,8 +178,8 @@ export default function Home() {
             <h2 className="contact-title">{t('お気軽にご相談ください。', 'Get in touch.')}</h2>
             <p className="contact-text">
               {t(
-                'プロジェクトのご依頼・ご質問など、まずはメールでお問い合わせください。',
-                'For project inquiries or questions, feel free to reach out via email.'
+                'サービスに関するご質問やご相談は、メールでお問い合わせください。',
+                'For questions about our services, feel free to reach out via email.'
               )}
             </p>
             <a href="mailto:support@its-capsule.com" className="contact-email">support@its-capsule.com</a>
