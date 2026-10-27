@@ -54,8 +54,8 @@ export default function Home() {
                 <h3 className="service-name">{t('補助金ポケット', 'Hojokin Pocket')}</h3>
                 <p className="service-desc">
                   {t(
-                    '中小企業の補助金申請を、経営者とそのAIで進めるためのサービス『補助金ポケット』を開発・運営しています。',
-                    'CAPSULE Inc. builds and operates Hojokin Pocket, an AI-native platform that helps Japanese small businesses find and apply for government subsidies.'
+                    '中小企業の補助金申請を、経営者とそのAIで進めるためのサービス『補助金ポケット』を開発・運営しています。行政書士をはじめとする申請支援のプロと連携し、制度選びから申請までを専門家と一緒に支える形で提供しています。',
+                    'CAPSULE Inc. builds and operates Hojokin Pocket, an AI-native platform that helps Japanese small businesses find and apply for government subsidies. We deliver it in partnership with administrative scriveners (gyoseishoshi) and other application specialists, so business owners are supported by professionals from choosing a program to submitting their application.'
                   )}
                 </p>
                 <span className="service-link">{t('サービスサイトへ', 'Visit website')}</span>
@@ -73,8 +73,8 @@ export default function Home() {
                 <h3 className="service-name">AI Integration &amp; Consulting</h3>
                 <p className="service-desc">
                   {t(
-                    '最先端のAI技術を活用した業務効率化・プロダクト開発を支援。導入戦略の策定からPoC、実装までを伴走します。',
-                    'We help businesses leverage cutting-edge AI for operational efficiency and product development — from strategy and PoC to full implementation.'
+                    '行政書士をはじめとする士業事務所を中心に、AIを前提とした業務の再設計を支援しています。日々の事務作業の整理から、ツールの設定・導入、現場での定着までを伴走します。',
+                    'We help professional practices — especially administrative scriveners (gyoseishoshi) — redesign their work around AI, from mapping day-to-day tasks to setting up tools and making them stick in practice.'
                   )}
                 </p>
               </div>
